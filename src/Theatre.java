@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+
 import Shows.*;
 import People.*;
 
@@ -36,9 +37,6 @@ public class Theatre {
         opera.replaceActor(actor3, actor2);
         opera.printListOfActor();
         System.out.println("Либретто оперы: " + opera.getLibrettoText());
-
-
-
 
 
     }

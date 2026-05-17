@@ -28,11 +28,11 @@ public class Actor extends Person {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Actor actor = (Actor) o;
-        return height == actor.height && getName().equals(actor.getName()) && getSurname().equals(actor.getSurname());
+        return height == actor.height;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(height, getName(), getSurname());
+        return Objects.hash(height);
     }
 }

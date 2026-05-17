@@ -1,6 +1,7 @@
 package Shows;
 
 import java.util.ArrayList;
+
 import People.Actor;
 import People.Director;
 
@@ -51,6 +52,10 @@ public class Show {
         }
     }
 
+    public void printDirector() {
+        System.out.println(director);
+    }
+
     public void addActor(Actor actor) {
         if (!listOfActor.contains(actor)) {
             listOfActor.add(actor);
@@ -60,7 +65,14 @@ public class Show {
     }
 
     public void replaceActor(Actor replacedActor, Actor newActor) {
-        if(listOfActor.contains(replacedActor)) {
+        // У меня есть вопрос по поводу пакетов, правильно ли я их использовал и если нет, то можете дать рекомендации, пожалуйста.
+        for (Actor actor : listOfActor) {
+            if (actor.getSurname().equals(newActor.getSurname())) {
+                System.out.println("Есть актер с такой же фамилией, замена не будет осуществлена.");
+                return;
+            }
+        }
+        if (listOfActor.contains(replacedActor)) {
             listOfActor.remove(replacedActor);
             listOfActor.add(newActor);
         } else {
