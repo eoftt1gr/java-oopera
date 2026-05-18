@@ -1,8 +1,4 @@
-package Shows;
-
-import People.Actor;
-import People.Director;
-import People.Person;
+package theatre;
 
 import java.util.ArrayList;
 

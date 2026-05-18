@@ -1,4 +1,4 @@
-package People;
+package theatre;
 
 public class Director extends Person {
     private int numberOfShows;

@@ -1,4 +1,4 @@
-package People;
+package theatre;
 
 import java.util.Objects;
 

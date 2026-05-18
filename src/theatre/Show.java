@@ -1,9 +1,6 @@
-package Shows;
+package theatre;
 
 import java.util.ArrayList;
-
-import People.Actor;
-import People.Director;
 
 public class Show {
     private String title;

@@ -1,8 +1,6 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
-import Shows.*;
-import People.*;
+import theatre.*;
 
 public class Theatre {
     public static void main(String[] args) {
